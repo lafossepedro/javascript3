@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Presupuesto de Viaje</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Calculadora de Presupuesto</h1>
+
+  <div class="input-section">
+    <label for="destino">Destino:</label>
+    <input type="text" id="destino" name="destino">
+
+    <label for="presupuesto">¿Cuál es tu Presupuesto Total para este viaje?</label>
+    <input type="number" id="presupuesto" placeholder="Ingrese su presupuesto">
+
+    <label for="frecuencia">¿Cómo querés dividir tu presupuesto?</label>
+    <select id="frecuencia">
+      <option value="día">Día</option>
+      <option value="semana">Semana</option>
+      <option value="mes">Mes</option>
+    </select>
+
+    <label for="periodo">Número de días/semanas/meses que estarás de viaje:</label>
+    <input type="number" id="periodo" placeholder="Ingrese el número de períodos">
+  </div>
+
+  <div class="prioridades-section">
+    <h2>Asignación de Prioridades:</h2>
+
+    <div class="prioridad">
+      <label for="transporte">Transporte:</label>
+      <input type="number" id="transporte" min="1" max="5" placeholder="Asigne un número del 1 al 5">
+    </div>
+
+    <div class="prioridad">
+      <label for="alojamiento">Alojamiento:</label>
+      <input type="number" id="alojamiento" min="1" max="5" placeholder="Asigne un número del 1 al 5">
+    </div>
+
+    <div class="prioridad">
+      <label for="excursiones">Excursiones:</label>
+      <input type="number" id="excursiones" min="1" max="5" placeholder="Asigne un número del 1 al 5">
+    </div>
+
+    <div class="prioridad">
+      <label for="comidas">Comidas:</label>
+      <input type="number" id="comidas" min="1" max="5" placeholder="Asigne un número del 1 al 5">
+    </div>
+
+    <div class="prioridad">
+      <label for="imprevistos">Imprevistos:</label>
+      <input type="number" id="imprevistos" min="1" max="5" placeholder="Asigne un número del 1 al 5">
+    </div>
+  </div>
+
+  <button onclick="calcularPresupuesto()">Calcular</button>
+
+  <div class="resultados-section">
+    <h2>Resultados:</h2>
+    <div id="resultados"></div>
+  </div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
