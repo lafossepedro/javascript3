@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MinimaList</title>
+  <link rel="icon" href="./media/check.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<div id="app">
+  <h1>MinimaList</h1>
+  <hr>
+    <h3>Sin distracciones. Agrega tareas, márcalas como completadas o elimínalas.</h3>
+    <p>Crea una primera tarea para recuperar las que has agregado previamente.</p>
+    <br>
+  <input type="text" id="taskInput" placeholder="Nueva tarea">
+  <input type="text" id="dueDateInput" class="due-date-picker" placeholder="Fecha de vencimiento (opcional)" data-input>
+  <button onclick="addTask()">Crear</button>
+  <ul id="taskList"></ul>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
